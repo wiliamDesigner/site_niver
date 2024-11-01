@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding: 0; 
+    box-sizing: border-box;   
+}
+
+
+#principal{
+
+  
+
+  position: relative;
+  text-align: center;
+
+  img{
+    height: 100vh;
+    width: 100vw;
+    object-fit: cover;
+  }
+
+  .temporizador{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    color: aliceblue;
+    top: 50%; 
+    left: 50%; 
+    gap: 20px;
+    transform: translate(-50%, -50%); 
+    font-size: 110px;
+    font-family:"Italianno"; 
+  }
+  
+  .confirma{
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer; 
+  }
+  
+  .botao{
+    padding: 20px 20px; 
+    border: none;
+    border-radius: 30px;
+    background-color: rgb(233, 100, 226);
+    color: white; 
+    font-size: 40px;
+    font-family: "Italianno";
+  }
+  
+  .botao a{
+    text-decoration: none; 
+    color: inherit; 
+  } 
+}
+
+
+ /* Estilos para tablets */  
+
+ @media (max-width: 1024px){
+  #principal{
+    .temporizador{
+      font-size: 70px;
+    }
+
+    .botao{
+      font-size: 30px;
+    }
+
+    .confirma{
+      top: 70%;
+      left: 50%;
+    }
+  }
+
+
+}
+
+ /* Estilos para celulares */
+
+ @media (max-width: 767px){
+  #principal{
+    .temporizador{
+      font-size: 30px;
+    }
+
+    .botao{
+      font-size: 20px;
+    }
+
+    .confirma{
+      top: 70%;
+      left: 50%;
+    }
+  }
+
+
+}
+
+

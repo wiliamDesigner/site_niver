@@ -1,0 +1,84 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+#principal {
+  text-align: center;
+  position: relative;
+}
+
+#principal img {
+  object-fit: cover;
+  width: 100vw;
+  height: 100vh;
+}
+
+#principal .temporizador {
+  color: #f0f8ff;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  font-family: Italianno;
+  font-size: 110px;
+  display: flex;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#principal .confirma {
+  cursor: pointer;
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#principal .botao {
+  color: #fff;
+  background-color: #e964e2;
+  border: none;
+  border-radius: 30px;
+  padding: 20px;
+  font-family: Italianno;
+  font-size: 40px;
+}
+
+#principal .botao a {
+  color: inherit;
+  text-decoration: none;
+}
+
+@media (width <= 1024px) {
+  #principal .temporizador {
+    font-size: 70px;
+  }
+
+  #principal .botao {
+    font-size: 30px;
+  }
+
+  #principal .confirma {
+    top: 70%;
+    left: 50%;
+  }
+}
+
+@media (width <= 767px) {
+  #principal .temporizador {
+    font-size: 30px;
+  }
+
+  #principal .botao {
+    font-size: 20px;
+  }
+
+  #principal .confirma {
+    top: 70%;
+    left: 50%;
+  }
+}
+/*# sourceMappingURL=main.css.map */
